@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android" a:id="@+id/main"
+    a:layout_width="match_parent" a:layout_height="match_parent" a:orientation="vertical"
+    a:paddingBottom="16dp" a:paddingLeft="64dp" a:paddingRight="64dp" a:paddingTop="16dp">
+
+<RelativeLayout a:id="@+id/bar" a:layout_alignParentBottom="true" a:layout_width="match_parent"
+    a:layout_height="wrap_content">
+    <EditText a:id="@+id/txtvw" a:text="текст" a:layout_width="150dp" a:layout_height="wrap_content"
+        a:layout_centerVertical="true" a:maxLines="1"
+        a:selectAllOnFocus="true"/>
+    <Button a:id="@+id/btn" a:background="#ffa" a:layout_toEndOf="@+id/txtvw"
+        a:layout_width="wrap_content" a:layout_height="wrap_content" a:text="Додати"
+        a:onClick="add_btn_clicked"/>
+</RelativeLayout>
+    <ListView a:id="@+id/lv" a:layout_width="match_parent" a:layout_height="match_parent"
+        a:layout_above="@+id/bar"/>
+</RelativeLayout>
